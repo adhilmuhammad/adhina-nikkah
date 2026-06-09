@@ -21,7 +21,7 @@ export default function FinalCard() {
           text-[#6d5f5f]
         "
       >
-        "And We created you in pairs"
+        "And we created you in pairs"
       </h3>
 
       {/* Quran verse */}
@@ -56,7 +56,7 @@ export default function FinalCard() {
         "
       >
         <p>
-          IN SHA ALLAH, YOUR ESTEEMED PRESENCE
+          INSHA ALLAH, YOUR ESTEEMED PRESENCE
           <br />
           AND HEARTFELT PRAYERS ARE THE MOST
           <br />

@@ -115,7 +115,7 @@ export default function CeremonyCard() {
               </p>
 
               <h4 className="mt-4 text-[34px] sm:text-[48px] font-serif text-[#4A403A]">
-                Al Saj Amranta
+                Al Saj Amaranta
               </h4>
 
               <p className="mt-2 text-xl sm:text-2xl text-[#666]">
