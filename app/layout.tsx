@@ -4,13 +4,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://adhina-nikkah-invitation.vercel.app"),
 
-  title: "Adhina & Shaz",
+  title: "Adhina & Shaz Nikkah",
 
   description:
     "Together with their families, you are invited to the Nikkah of Adhina & Shaz. 22 June 2026 • 10:30 AM • Al Saj Amaranta, Trivandrum",
 
   openGraph: {
-    title: "Adhina & Shaz",
+    title: "Adhina & Shaz Nikkah",
 
     description:
       "22 June 2026 • 10:30 AM • Al Saj Amaranta, Trivandrum",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Adhina & Shaz",
+    title: "Adhina & Shaz Nikkah",
 
     description:
       "22 June 2026 • 10:30 AM • Al Saj Amaranta, Trivandrum",
