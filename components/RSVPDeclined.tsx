@@ -1,6 +1,12 @@
 "use client";
 
-export default function RSVPDeclined() {
+interface RSVPDeclinedProps {
+  onBack: () => void;
+}
+
+export default function RSVPDeclined({
+  onBack,
+}: RSVPDeclinedProps) {
   return (
     <section className="relative">
 
@@ -19,7 +25,6 @@ export default function RSVPDeclined() {
       >
         {/* Header */}
         <div className="py-14 text-center">
-
           <h2
             className="
             font-serif
@@ -34,7 +39,6 @@ export default function RSVPDeclined() {
           </h2>
 
           <div className="w-16 h-px bg-[#d4c091] mx-auto mt-8" />
-
         </div>
 
         {/* Dotted divider */}
@@ -67,6 +71,21 @@ export default function RSVPDeclined() {
             <br />
             for letting us know!
           </p>
+
+          {/* Back button */}
+          <button
+            onClick={onBack}
+            className="
+              mt-10
+              text-[#9AAE9C]
+              uppercase
+              tracking-[0.25em]
+              text-xs
+              underline
+            "
+          >
+            Back to Options
+          </button>
 
         </div>
       </div>

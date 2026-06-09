@@ -1,4 +1,4 @@
-"use client";
+npm install canvas-confetti"use client";
 
 import { useEffect } from "react";
 import confetti from "canvas-confetti";
