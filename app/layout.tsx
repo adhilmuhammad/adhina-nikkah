@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     ],
   },
 
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
+icons: {
+  icon: "https://adhina-nikkah-invitation.vercel.app/favicon.ico",
+  shortcut: "https://adhina-nikkah-invitation.vercel.app/favicon.ico",
+  apple: "https://adhina-nikkah-invitation.vercel.app/favicon.ico",
+},
 };
 
 export default function RootLayout({
