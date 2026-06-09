@@ -10,9 +10,9 @@ export default function RSVPDeclined({
   return (
     <section className="relative">
 
-      {/* ticket circles */}
-      <div className="absolute left-[-10px] top-[180px] w-5 h-5 rounded-full bg-[#F8F4F1]" />
-      <div className="absolute right-[-10px] top-[180px] w-5 h-5 rounded-full bg-[#F8F4F1]" />
+      {/* Ticket circles */}
+      <div className="absolute left-[-8px] top-[150px] sm:top-[180px] w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#F8F4F1]" />
+      <div className="absolute right-[-8px] top-[150px] sm:top-[180px] w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#F8F4F1]" />
 
       <div
         className="
@@ -24,11 +24,13 @@ export default function RSVPDeclined({
       "
       >
         {/* Header */}
-        <div className="py-14 text-center">
+        <div className="py-10 sm:py-14 text-center">
+
           <h2
             className="
             font-serif
-            text-[56px]
+            text-[40px]
+            sm:text-[56px]
             leading-none
             text-[#2f2c2c]
           "
@@ -39,19 +41,21 @@ export default function RSVPDeclined({
           </h2>
 
           <div className="w-16 h-px bg-[#d4c091] mx-auto mt-8" />
+
         </div>
 
         {/* Dotted divider */}
         <div className="border-t border-dashed border-[#e3c995]" />
 
         {/* Content */}
-        <div className="px-10 py-16 text-center">
+        <div className="px-6 sm:px-10 py-10 sm:py-16 text-center">
 
-          {/* Red title */}
+          {/* Title */}
           <h3
             className="
             font-serif
-            text-[42px]
+            text-[30px]
+            sm:text-[42px]
             text-[#ff8c8c]
           "
           >
@@ -63,16 +67,17 @@ export default function RSVPDeclined({
             className="
             mt-8
             text-[#9AAE9C]
-            text-[20px]
-            leading-9
+            text-[16px]
+            sm:text-[20px]
+            leading-8
           "
           >
-            We'll miss you, but thank you
+            We'll miss you,
             <br />
-            for letting us know!
+            but thank you for letting us know!
           </p>
 
-          {/* Back button */}
+          {/* Back Button */}
           <button
             onClick={onBack}
             className="
@@ -80,14 +85,19 @@ export default function RSVPDeclined({
               text-[#9AAE9C]
               uppercase
               tracking-[0.25em]
-              text-xs
+              text-[11px]
+              sm:text-xs
               underline
+              underline-offset-4
+              hover:text-[#b88912]
+              transition
             "
           >
-            Back to Options
+            Back To Options
           </button>
 
         </div>
+
       </div>
 
     </section>

@@ -9,26 +9,58 @@ interface EnvelopeProps {
 export default function Envelope({ onOpen }: EnvelopeProps) {
   return (
     <motion.div
-      className="relative flex flex-col items-center"
+      className="relative flex flex-col items-center px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
       {/* Heading */}
-      <div className="text-center mb-12">
-        <h1 className="font-serif italic text-[56px] text-[#6F5B53]">
+      <div className="text-center mb-10">
+        <h1
+          className="
+          font-serif
+          italic
+          text-[40px]
+          sm:text-[56px]
+          text-[#6F5B53]
+          leading-tight
+        "
+        >
           Nikkah Invitation
         </h1>
 
-        <p className="text-[#B8860B] italic mt-3 text-[20px] font-medium tracking-wide">
-  Adhina Al Fathima & Shaz Musthak
+        <p
+          className="
+          text-[#B8860B]
+          italic
+          mt-3
+          text-[16px]
+          sm:text-[20px]
+          font-medium
+          tracking-wide
+          leading-relaxed
+          px-4
+        "
+        >
+          Adhina Al Fathima & Shaz Musthak
         </p>
 
         <div className="w-20 h-px bg-[#D8C7A3] mx-auto mt-5"></div>
       </div>
 
       {/* Envelope */}
-      <div className="w-[300px] sm:w-[380px] h-[210px] sm:h-[260px] bg-[#F7F1E8] shadow-2xl relative overflow-hidden rounded-2xl">
-
+      <div
+        className="
+        w-[280px]
+        sm:w-[380px]
+        h-[200px]
+        sm:h-[260px]
+        bg-[#F7F1E8]
+        shadow-2xl
+        relative
+        overflow-hidden
+        rounded-2xl
+      "
+      >
         {/* Back */}
         <div className="absolute inset-0 bg-[#F3EDE3]" />
 
@@ -71,8 +103,23 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
             cursor-pointer
           "
         >
-          <div className="w-20 h-20 rounded-full bg-[#D4AF37] border-4 border-[#E5C75B] flex items-center justify-center shadow-xl">
-            <span className="font-serif text-white text-2xl">
+          <div
+            className="
+            w-16
+            h-16
+            sm:w-20
+            sm:h-20
+            rounded-full
+            bg-[#D4AF37]
+            border-4
+            border-[#E5C75B]
+            flex
+            items-center
+            justify-center
+            shadow-xl
+          "
+          >
+            <span className="font-serif text-white text-xl sm:text-2xl">
               A&S
             </span>
           </div>
@@ -80,7 +127,18 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
       </div>
 
       {/* Bottom Text */}
-      <p className="mt-8 text-[#6B7280] tracking-[0.35em] uppercase text-xs sm:text-sm">
+      <p
+        className="
+        mt-8
+        text-[#6B7280]
+        tracking-[0.25em]
+        uppercase
+        text-[11px]
+        sm:text-sm
+        text-center
+        px-4
+      "
+      >
         Tap The Seal To Open
       </p>
     </motion.div>

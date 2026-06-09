@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
+/* Body */
 body {
-  background: #f8f4f1;
+  background: #faf2f5;
   color: #2d2d2d;
+  overflow-x: hidden;
 }
 
+/* Gold glow background */
 body::before {
   content: "";
   position: fixed;
@@ -20,23 +24,77 @@ body::before {
     radial-gradient(circle at 80% 30%, rgba(212,175,55,.06) 0px, transparent 150px),
     radial-gradient(circle at 50% 80%, rgba(212,175,55,.05) 0px, transparent 180px);
 
-  z-index: -1;
-}
-body {
-  background: #faf2f5;
+  z-index: -2;
 }
 
+/* White paper effect */
 .paper-column {
-  background: #fffdf9;
   position: relative;
+  background: #fffdf9;
 }
 
+/* Paper grain texture */
 .paper-column::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    radial-gradient(rgba(0,0,0,.03) 1px, transparent 1px);
-  background-size: 26px 26px;
   pointer-events: none;
+
+  background-image:
+    radial-gradient(rgba(0,0,0,.025) 1px, transparent 1px);
+
+  background-size: 28px 28px;
+
+  opacity: .4;
+}
+
+/* Better text rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove blue highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inputs */
+input,
+button {
+  font: inherit;
+}
+
+/* Prevent zoom on iPhone */
+input {
+  font-size: 16px;
+}
+
+/* Nice selection color */
+::selection {
+  background: rgba(212, 175, 55, 0.25);
+}
+
+/* Thin scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf2f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212,175,55,.4);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212,175,55,.6);
 }

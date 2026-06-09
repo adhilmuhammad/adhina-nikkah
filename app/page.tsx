@@ -34,7 +34,7 @@ export default function Home() {
           <source src="/music.mp3" type="audio/mpeg" />
         </audio>
 
-        <main className="min-h-screen bg-[#F8F4F1] flex items-center justify-center">
+        <main className="min-h-screen bg-[#F8F4F1] flex items-center justify-center px-4">
           <Envelope onOpen={handleOpen} />
         </main>
       </>
@@ -47,7 +47,7 @@ export default function Home() {
         <source src="/music.mp3" type="audio/mpeg" />
       </audio>
 
-      <main className="bg-[#F8F4F1] min-h-screen px-4">
+      <main className="bg-[#F8F4F1] min-h-screen px-2 sm:px-4">
         <FloatingParticles />
 
         {/* Confetti Effect */}
@@ -56,20 +56,26 @@ export default function Home() {
         {/* White Paper Column */}
         <div
           className="
-            max-w-[540px]
-            mx-auto
-            bg-[#FEFCF8]
-            min-h-screen
-            py-10
-            px-5
-            space-y-4
-            shadow-[0_0_40px_rgba(0,0,0,0.04)]
-          "
+          w-full
+          max-w-[620px]
+          mx-auto
+          bg-[#FEFCF8]
+          min-h-screen
+          px-3
+          sm:px-5
+          py-6
+          sm:py-10
+          space-y-5
+          shadow-[0_0_40px_rgba(0,0,0,0.04)]
+        "
         >
+          {/* Invitation */}
           <InvitationCard />
 
+          {/* Ceremony */}
           <CeremonyCard />
 
+          {/* RSVP */}
           {rsvpState === "options" && (
             <RSVPCard
               onAccept={() => setRsvpState("form")}
@@ -77,18 +83,21 @@ export default function Home() {
             />
           )}
 
+          {/* RSVP Form */}
           {rsvpState === "form" && (
             <RSVPForm
               onBack={() => setRsvpState("options")}
             />
           )}
 
+          {/* Declined */}
           {rsvpState === "declined" && (
             <RSVPDeclined
               onBack={() => setRsvpState("options")}
             />
           )}
 
+          {/* Final */}
           <FinalCard />
         </div>
       </main>
