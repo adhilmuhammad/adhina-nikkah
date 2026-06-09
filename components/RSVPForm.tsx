@@ -128,26 +128,36 @@ export default function RSVPForm({ onBack }: RSVPFormProps) {
               "
             />
 
+            `
             <input
+              type="tel"
               value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, "");
+                if (value.length <= 10) {
+                  setPhone(value);
+                }
+              }}
               placeholder="Mobile Number"
               required
+              minLength={10}
+              maxLength={10}
               className="
-              w-full
-              bg-transparent
-              border-b
-              border-[#E7D7A6]
-              py-4
-              outline-none
-              font-serif
-              text-[16px]
-              sm:text-[18px]
-              text-[#555]
-              placeholder:text-[#B8B8B8]
-              placeholder:italic
+                w-full
+                bg-transparent
+                border-b
+                border-[#E7D7A6]
+                py-4
+                outline-none
+                font-serif
+                text-[18px]
+                text-[#555]
+                placeholder:text-[#B8B8B8]
+                placeholder:italic
               "
             />
+
+
 
             <input
               value={guests}
