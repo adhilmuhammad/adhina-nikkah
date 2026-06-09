@@ -1,67 +1,61 @@
+"use client";
+
 export default function FinalCard() {
   return (
-    <section className="pt-6 sm:pt-8 pb-8 sm:pb-10 text-center">
+    <section className="relative py-20 text-center">
 
-      {/* Top Ornament */}
-      <div className="flex items-center justify-center gap-4">
-        <div className="w-8 sm:w-10 h-px bg-[#D7BE7D]" />
-        <div className="w-3 h-3 rotate-45 border border-[#D7BE7D]" />
-        <div className="w-8 sm:w-10 h-px bg-[#D7BE7D]" />
+      {/* Ornament */}
+      <div className="flex items-center justify-center gap-5">
+        <div className="w-10 h-px bg-[#d6b25e]" />
+        <div className="w-3 h-3 rotate-45 border border-[#d6b25e]" />
+        <div className="w-10 h-px bg-[#d6b25e]" />
       </div>
 
       {/* Quote */}
       <h3
         className="
-        mt-8
-        text-[20px]
-        sm:text-[23px]
-        italic
-        font-serif
-        text-[#5D514B]
-        px-4
-        leading-relaxed
-      "
+          mt-12
+          font-serif
+          italic
+          text-[34px]
+          text-[#6d5f5f]
+        "
       >
         "And We created you in pairs"
       </h3>
 
-      {/* Quran Reference */}
-      <div className="flex items-center justify-center gap-3 mt-3">
-        <div className="w-8 h-px bg-[#D7BE7D]" />
+      {/* Quran verse */}
+      <div className="mt-5 flex items-center justify-center gap-4">
+        <div className="w-8 h-px bg-[#d6b25e]" />
 
-        <p
+        <span
           className="
-          text-[11px]
-          sm:text-[13px]
-          uppercase
-          tracking-[2px]
-          sm:tracking-[3px]
-          text-[#C79B32]
-        "
+            uppercase
+            tracking-[0.3em]
+            text-[18px]
+            text-[#d6b25e]
+          "
         >
           Quran 78:8
-        </p>
+        </span>
 
-        <div className="w-8 h-px bg-[#D7BE7D]" />
+        <div className="w-8 h-px bg-[#d6b25e]" />
       </div>
 
-      {/* Divider */}
-      <div className="w-14 h-px bg-[#DADADA] mx-auto mt-7"></div>
+      <div className="w-16 h-px bg-[#e6dfd5] mx-auto mt-10" />
 
-      {/* Message */}
-      <div className="mt-8 sm:mt-10 space-y-7">
-
-        <p
-          className="
-          text-[12px]
-          sm:text-[14px]
-          leading-[2]
-          tracking-[2px]
-          sm:tracking-[3px]
+      {/* Main Message */}
+      <div
+        className="
+          mt-12
+          text-[#8f8b86]
           uppercase
-          text-[#777]
+          tracking-[0.18em]
+          text-[17px]
+          leading-[2.2]
         "
-        >
+      >
+        <p>
           IN SHA ALLAH, YOUR ESTEEMED PRESENCE
           <br />
           AND HEARTFELT PRAYERS ARE THE MOST
@@ -71,55 +65,40 @@ export default function FinalCard() {
           THIS BLESSED OCCASION.
         </p>
 
-        <p
-          className="
-          text-[12px]
-          sm:text-[14px]
-          leading-[2]
-          tracking-[2px]
-          sm:tracking-[3px]
-          uppercase
-          text-[#777]
-        "
-        >
+        <p className="mt-10">
           WE, ALONG WITH OUR FAMILIES,
           <br />
           WARMLY INVITE YOU TO SHARE OUR JOY.
         </p>
-
       </div>
 
-      {/* Divider */}
-      <div className="w-14 h-px bg-[#DADADA] mx-auto mt-10"></div>
+      <div className="w-16 h-px bg-[#e6dfd5] mx-auto mt-12" />
 
       {/* With Love */}
       <h2
         className="
-        mt-10
-        text-[32px]
-        sm:text-[44px]
-        italic
-        font-serif
-        text-[#C79B32]
-        leading-tight
-      "
+          mt-12
+          font-serif
+          italic
+          text-[56px]
+          text-[#c79628]
+        "
       >
         With Love & Duas
       </h2>
 
-      {/* Families */}
-      <div className="mt-7 px-4">
-        <p
-          className="
-          text-[12px]
-          sm:text-[14px]
+      {/* Family names */}
+      <div
+        className="
+          mt-10
+          text-[#8f8b86]
           uppercase
-          tracking-[2px]
-          sm:tracking-[4px]
-          leading-[2]
-          text-[#777]
+          tracking-[0.22em]
+          text-[16px]
+          leading-[2.2]
         "
-        >
+      >
+        <p>
           Anas, Shameera, Saiju Khan,
           <br />
           Al Ameen, Shakir, Alfiya

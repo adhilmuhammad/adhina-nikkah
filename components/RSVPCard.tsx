@@ -18,7 +18,7 @@ export default function RSVPCard({
 
       <div
         className="
-        bg-[#FEFCF8]
+        bg-[#FBF6F0]
         rounded-[28px]
         overflow-hidden
         shadow-[0_15px_35px_rgba(0,0,0,0.08)]

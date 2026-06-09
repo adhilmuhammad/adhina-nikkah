@@ -59,7 +59,7 @@ export default function Home() {
           w-full
           max-w-[620px]
           mx-auto
-          bg-[#FEFCF8]
+          bg-[#FBF6F0]
           min-h-screen
           px-3
           sm:px-5

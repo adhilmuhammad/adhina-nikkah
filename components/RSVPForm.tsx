@@ -43,7 +43,7 @@ export default function RSVPForm({ onBack }: RSVPFormProps) {
   if (submitted) {
     return (
       <section className="relative">
-        <div className="bg-[#FEFCF8] rounded-[28px] overflow-hidden border border-[#ece5da] shadow-[0_15px_35px_rgba(0,0,0,0.08)]">
+        <div className="bg-[#FBF6F0] rounded-[28px] overflow-hidden border border-[#ece5da] shadow-[0_15px_35px_rgba(0,0,0,0.08)]">
 
           <div className="py-10 sm:py-14 text-center">
             <h2 className="font-serif text-[40px] sm:text-[56px] leading-none text-[#2f2c2c]">
@@ -79,7 +79,7 @@ export default function RSVPForm({ onBack }: RSVPFormProps) {
   return (
     <section className="relative">
 
-      <div className="bg-[#FEFCF8] rounded-[28px] overflow-hidden border border-[#ece5da] shadow-[0_15px_35px_rgba(0,0,0,0.08)]">
+      <div className="bg-[] rounded-[28px] overflow-hidden border border-[#ece5da] shadow-[0_15px_35px_rgba(0,0,0,0.08)]">
 
         {/* Header */}
         <div className="py-10 sm:py-14 text-center">

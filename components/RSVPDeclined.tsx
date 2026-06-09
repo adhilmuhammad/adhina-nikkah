@@ -16,7 +16,7 @@ export default function RSVPDeclined({
 
       <div
         className="
-        bg-[#FEFCF8]
+        bg-[#FBF6F0]
         rounded-[28px]
         overflow-hidden
         border border-[#ece5da]
