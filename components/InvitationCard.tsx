@@ -69,7 +69,7 @@ export default function InvitationCard() {
 
           <div>
             <p className="text-lg sm:text-xl text-[#4B4B4B] font-medium leading-relaxed">
-              Mr. Musthak & Mrs. Nafeezath
+              Mr. P K Musthak & Mrs. Nafeesath O T
             </p>
 
             <p className="text-xs sm:text-sm tracking-[0.2em] uppercase text-[#B8860B] mt-2">
