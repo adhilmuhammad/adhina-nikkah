@@ -101,7 +101,7 @@ export default function FinalCard() {
         <p>
           Anas, Shameera, Saiju Khan,
           <br />
-          Al Ameen, Shakir, Alfiya
+          Al Ameen, Shakir, Alfiya,
           <br />
           Adhil & Families
         </p>

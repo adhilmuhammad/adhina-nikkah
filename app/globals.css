@@ -27,13 +27,11 @@ body::before {
   z-index: -2;
 }
 
-/* White paper effect */
 .paper-column {
   position: relative;
   background: #fffdf9;
 }
 
-/* Paper grain texture */
 .paper-column::before {
   content: "";
   position: absolute;
@@ -44,44 +42,33 @@ body::before {
     radial-gradient(rgba(0,0,0,.025) 1px, transparent 1px);
 
   background-size: 28px 28px;
-
   opacity: .4;
 }
 
-/* Better text rendering */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Remove blue highlight on mobile */
-* {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Images */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Inputs */
 input,
 button {
   font: inherit;
 }
 
-/* Prevent zoom on iPhone */
 input {
   font-size: 16px;
 }
 
-/* Nice selection color */
 ::selection {
   background: rgba(212, 175, 55, 0.25);
 }
 
-/* Thin scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -97,4 +84,9 @@ input {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(212,175,55,.6);
+}
+
+/* Alex Brush */
+.font-alex-brush {
+  font-family: var(--font-alex-brush), cursive;
 }

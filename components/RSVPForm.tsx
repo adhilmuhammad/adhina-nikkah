@@ -127,8 +127,6 @@ export default function RSVPForm({ onBack }: RSVPFormProps) {
               placeholder:italic
               "
             />
-
-            `
             <input
               type="tel"
               value={phone}

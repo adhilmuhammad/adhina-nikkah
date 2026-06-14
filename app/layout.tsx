@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Alex_Brush } from "next/font/google";
+
+const alexBrush = Alex_Brush({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-alex-brush",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://adhina-nikkah-invitation.vercel.app"),
@@ -11,12 +18,9 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Adhina & Shaz Nikkah",
-
     description:
       "22 June 2026 • 10:30 AM • Al Saj Amaranta, Trivandrum",
-
     url: "https://adhina-nikkah-invitation.vercel.app",
-
     siteName: "Nikkah Invitation",
 
     images: [
@@ -33,9 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: "Adhina & Shaz Nikkah",
-
     description:
       "22 June 2026 • 10:30 AM • Al Saj Amaranta, Trivandrum",
 
@@ -44,11 +46,11 @@ export const metadata: Metadata = {
     ],
   },
 
-icons: {
-  icon: "https://adhina-nikkah-invitation.vercel.app/favicon.ico",
-  shortcut: "https://adhina-nikkah-invitation.vercel.app/favicon.ico",
-  apple: "https://adhina-nikkah-invitation.vercel.app/favicon.ico",
-},
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -58,7 +60,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={alexBrush.variable}>
+        {children}
+      </body>
     </html>
   );
 }
