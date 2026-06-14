@@ -85,8 +85,3 @@ input {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(212,175,55,.6);
 }
-
-/* Alex Brush */
-.font-alex-brush {
-  font-family: var(--font-alex-brush), cursive;
-}

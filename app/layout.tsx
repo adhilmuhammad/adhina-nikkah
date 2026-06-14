@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Alex_Brush } from "next/font/google";
-
-const alexBrush = Alex_Brush({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-alex-brush",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://adhina-nikkah-invitation.vercel.app"),
@@ -60,8 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={alexBrush.variable}>
-        {children}
+      <body>
       </body>
     </html>
   );

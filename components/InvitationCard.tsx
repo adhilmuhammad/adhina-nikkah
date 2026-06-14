@@ -20,8 +20,8 @@ export default function InvitationCard() {
 
         <div className="w-16 h-px bg-[#D8C7A3] mx-auto my-10"></div>
 
-        {/* Couple Names */}
-<h1 className="font-alex-brush text-[#B88912] text-[88px] leading-[0.9]">
+       {/* Couple Names */}
+<h1 className="text-[72px] sm:text-[88px] leading-[1.05] text-[#B88912] font-serif">
   Adhina
   <br />
   Al Fathima
@@ -31,7 +31,7 @@ export default function InvitationCard() {
   ♥
 </div>
 
-<h1 className="font-alex-brush text-[#B88912] text-[88px] leading-[0.9]">
+<h1 className="text-[72px] sm:text-[88px] leading-[1.05] text-[#B88912] font-serif">
   Shaz Musthak
 </h1>
 
