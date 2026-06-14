@@ -1,3 +1,9 @@
+import { Cormorant_Garamond } from "next/font/google";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+});
 export default function InvitationCard() {
   return (
     <div className="bg-[#FCFBF8] border border-[#E7D7A6] rounded-t-[140px] rounded-b-[24px] shadow-xl overflow-hidden">
@@ -21,7 +27,9 @@ export default function InvitationCard() {
         <div className="w-16 h-px bg-[#D8C7A3] mx-auto my-10"></div>
 
        {/* Couple Names */}
-<h1 className="text-[72px] sm:text-[88px] leading-[1.05] text-[#B88912] font-serif">
+<h1
+  className={`${cormorant.className} text-[#A97B00] text-[88px] font-semibold leading-[1.02]`}
+>
   Adhina
   <br />
   Al Fathima
@@ -31,7 +39,9 @@ export default function InvitationCard() {
   ♥
 </div>
 
-<h1 className="text-[72px] sm:text-[88px] leading-[1.05] text-[#B88912] font-serif">
+<h1
+  className={`${cormorant.className} text-[#A97B00] text-[88px] font-semibold leading-[1.02]`}
+>
   Shaz Musthak
 </h1>
 
