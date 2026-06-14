@@ -28,24 +28,34 @@ export default function InvitationCard() {
 
        {/* Couple Names */}
 <h1
-  className={`${cormorant.className} text-[#A97B00] text-[88px] font-semibold leading-[1.02]`}
+  className={`${cormorant.className}
+  text-[#A57C00]
+  text-[44px]
+  sm:text-[88px]
+  leading-[0.9]
+  font-semibold`}
 >
   Adhina
   <br />
   Al Fathima
 </h1>
 
-<div className="text-[#D7B75D] text-3xl my-8">
+<div className="text-[#D6B341] text-2xl my-3">
   ♥
 </div>
 
 <h1
-  className={`${cormorant.className} text-[#A97B00] text-[88px] font-semibold leading-[1.02]`}
+  className={`${cormorant.className}
+  text-[#A57C00]
+  text-[44px]
+  sm:text-[88px]
+  leading-[0.9]
+  font-semibold`}
 >
   Shaz Musthak
 </h1>
 
-        <div className="w-16 h-px bg-[#D8C7A3] mx-auto my-10"></div>
+        <div className="w-16 h-px bg-[#D8C7A3] mx-auto my-6"></div>
 
         {/* Family Heading */}
         <p className="uppercase tracking-[0.3em] text-xs text-[#8B7355]">
